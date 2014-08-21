@@ -97,7 +97,6 @@ func replaceToHisaichi(strings []string, text string) string {
 }
 
 func canKanojonize(tweet *twitterstream.Tweet) bool {
-	// tweet.Mentions がある時は無視
 	if len(tweet.Entities.Mentions) >= 1 {
 		// メンションがあるときは無視
 		return false
